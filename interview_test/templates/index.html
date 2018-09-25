@@ -1,0 +1,8 @@
+{% for item in my_list_with_countries_and_tweets %}
+<li>{{ item.country_name }}</li>
+<ul>
+    {% for tweet in item.tweets %}
+    <li>{{ tweet.text }}</li>
+    {% endfor %}
+</ul>
+{% endfor %}
